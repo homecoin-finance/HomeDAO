@@ -1,0 +1,64 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  /* background: url(./assets/images/bg_warp.png), black;
+  background-position: center center;
+  background-size: cover; */
+  overflow-x: hidden;
+}
+
+.App {
+  font-family: 'Roboto';
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  padding-bottom: 180px; /* Footer height is 140px + content spacing 40px */
+  background: var(--color-background);
+}
+
+.devTools {
+  font-family: 'Roboto';
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background: white;
+}
+
+.loansDiv {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loanTable {
+  width: 85%;
+  background-color: antiquewhite;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 25%;
+}
+
+.txData {
+  max-width: 25%;
+  word-wrap: break-word;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

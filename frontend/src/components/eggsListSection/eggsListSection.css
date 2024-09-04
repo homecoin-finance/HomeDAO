@@ -1,0 +1,80 @@
+.eggsListSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 100px auto;
+  max-width: 1140px; /* 350px image plus margins */
+  padding-bottom: 10%;
+}
+
+.eggPreview {
+  box-sizing: border-box;
+  flex: 1 1 33%; /*grow | shrink | basis */
+  margin: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  max-width: 350px;
+  background: linear-gradient(to bottom, white 78%, black 22%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.eggPreview img {
+  width: 100%;
+  max-width: 230px;
+  max-height: 160px;
+  border-radius: 5px;
+}
+
+.eggPreviewDetails {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--spacing-sm);
+  min-height: 70px;
+}
+
+.eggPreviewDetails .eggAddress {
+  font-family: var(--font-family-fallback);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 16px;
+  font-size: var(--font-size-18);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #4e4e4e;
+  inline-size: 250px;
+  padding-bottom: 15%;
+}
+
+.eggPreviewDetails .eggValue {
+  width: 100%;
+  font-size: var(--font-size-18);
+  color: var(--color-green);
+  padding-bottom: 2%;
+  line-height: 15px;
+}
+
+.eggPreviewDetails .lienValue {
+  padding-top: 15%;
+  width: 100%;
+  font-size: var(--font-size-18);
+  color: var(--color-white);
+  padding-bottom: 2%;
+  line-height: 15px;
+}
+
+@media (max-width: 960px) {
+  .eggPreview {
+    max-width: 320px;
+  }
+  .eggPreview img {
+    max-width: 320px;
+    max-height: 360px;
+  }
+}

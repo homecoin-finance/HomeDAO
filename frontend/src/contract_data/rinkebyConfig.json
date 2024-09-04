@@ -1,0 +1,15 @@
+{
+  "usdcAddress": "0x56b5Ed2844D36282FC38e944f9B5abe0cCF96b27",
+  "poolAddress": "0xA627F5bB65c29039Fb6039c0853A79a8c2da1468",
+  "seededAddress": "0x4cc2d1E3F50f90A9d6bf3744597012EcDB802e20",
+  "propTokenAddress": "0x5748A02AF79454c44bEBfF3071bD4eAF6257231D",
+  "poolUtilsAddress": "0x26d5d5CfC1AFaa75572bfc21d7b8A7d19F572Ce0",
+  "poolStakingAddress": "0x5387c5fdC3679110164DBb3EEbcFa6ee0719872C",
+  "baconCoinAddress": "0xA1B509B1ce041573d767f27BA72c82ac385646ef",
+  "baconCoinAirdropAddress": "0xEB8A18698e2b80D3C27A8a79fe7b19D03B832541",
+  "Timelock": "0xdd6aB067f0D238321ccF82eF049c0Af07F0b7767",
+  "GovernorAlpha": "0xb4cD5f5140bfFB7d8EfA9C8976DB10BF66deE875",
+  "stakingAddress": "0xcCA0f968E79139E9f5794d7Aa679D8B78Dd0ed53",
+  "poolStakingRewardsAddress": "0xaA4816eBE7ba4147e5B973344d28dBDeDc478C16",
+  "homeBoostAddress": "0xdCf1b52FD5372Bb1bC79CD85f16f50BF586981B7"
+}

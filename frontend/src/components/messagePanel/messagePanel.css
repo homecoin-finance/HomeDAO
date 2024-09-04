@@ -1,0 +1,59 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message * {
+  font-family: var(--font-family-fallback);
+}
+
+.warnModal * {
+  font-family: var(--font-family-fallback);
+}
+
+.messageHeader {
+  margin: 25px auto;
+  color: var(--color-blue);
+}
+
+.messageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-18);
+}
+
+.warnModalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+  font-size: var(--font-size-18);
+  max-width: 50%;
+}
+
+.messageContent .line {
+  margin: 10px 0;
+  color: var(--color-blue);
+}
+
+.messageContent .value {
+  margin: 10px 0;
+}
+
+.messageContent .value.first {
+  color: var(--color-teal);
+}
+
+.messageContent .value.second {
+  color: var(--color-green);
+}
+
+.messageConfirmation {
+  margin: 25px auto;
+  width: 242px;
+}

@@ -1,0 +1,40 @@
+.navbar {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: 5%;
+  list-style: none;
+}
+
+.navbarItem {
+  color: var(--color-black);
+  padding: 0 25px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.active {
+  color: var(--color-purple);
+}
+
+@media (max-width: 1440px) {
+  .navbar {
+    left: 2%;
+  }
+}
+
+@media (max-width: 1275px) {
+  .navbarItem {
+    font-size: 18px;
+    right: 20%;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .navbar {
+    display: none;
+    visibility: hidden;
+  }
+}

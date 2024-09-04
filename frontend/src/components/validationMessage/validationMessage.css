@@ -1,0 +1,4 @@
+.validationMessage {
+  color: var(--color-red);
+  font-size: var(--font-size-18);
+}

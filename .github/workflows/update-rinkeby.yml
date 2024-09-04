@@ -1,0 +1,26 @@
+name: keep-rinkeby-branch-updated
+
+on:
+  push:
+    branches: [ main ]
+  # Allow manual runs of this workflow too
+  workflow_dispatch:
+
+jobs:
+  updateRinkebyBranch:
+    runs-on: ubuntu-latest
+    env:
+      FROM_BRANCH: main
+      TO_BRANCH: rinkeby
+    name: Update the Rinkeby branch with commits from v1.0-bacon
+    steps:
+      - uses: actions/checkout@v2
+      - name: Merge commits to rinkeby
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/loansnap/HomeDAO
+          git fetch --all
+          git switch $TO_BRANCH
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "automations@goloansnap.com"
+          git merge $FROM_BRANCH --no-edit --allow-unrelated-histories -X theirs
+          git push origin $TO_BRANCH

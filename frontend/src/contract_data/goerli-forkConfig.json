@@ -1,0 +1,9 @@
+{
+  "usdcAddress": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+  "poolAddress": "0x08dDe34bc96B1231e61C35de0c040C610FdeEF10",
+  "seededAddress": "0xa3E73ae94fdbE8e92bf9078E9b4427cA7a520ea4",
+  "Timelock": "0x66F70f3FaF0135D21eB420C2a3e318Dd0fDfc1a4",
+  "GovernorAlpha": "0x8778642c853dE63357c1c03d686d50009a366876",
+  "stakingAddress": "0x064cD6f08FDE9B7eFe399739CfA028e6dD62fae7",
+  "poolStakingRewardsAddress": "0x2dA48e48A7D78A257e1Da097656b8f6303090efE"
+}

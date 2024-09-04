@@ -1,0 +1,32 @@
+node_modules
+.DS_Store
+.secret
+.secretMainnet
+.env
+build/contracts
+build/contracts/Migrations.json
+ganache_db
+coverage
+coverage.json
+typechain
+
+frontend/node_modules
+frontend/src/contract_data/mainnet-forkConfig.json
+
+# Brownie
+build/deployments
+
+# OpenZeppelin
+.openzeppelin/unknown-*.json
+# Local Netlify folder
+.netlify
+
+#Hardhat files
+cache
+artifacts
+
+# vim
+*.swp
+
+venv
+__pycache__/

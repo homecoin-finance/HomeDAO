@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(./assets/fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: vars(--font-family-fallback);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* override BN modal */
+.bn-onboard-custom {
+  z-index: 100;
+}

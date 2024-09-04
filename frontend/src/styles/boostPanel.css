@@ -1,0 +1,181 @@
+.boostForm {
+  font-family: var(--font-family-fallback);
+  font-size: 24px;
+}
+
+.boostHomeAmtTitle {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.boostPanel .box {
+  border: 1px solid var(--color-background-border);
+  width: 85%;
+  margin: 20px;
+  border-radius: 10px;
+  background: white;
+}
+
+.box .button {
+  width: 80%;
+}
+
+.renewGroup {
+  display: flex;
+  align-items: center;
+  font-size: 0.66em;
+  font-weight: normal;
+  margin: 10px;
+}
+
+.renewToggle {
+  margin-left: 10px;
+}
+
+.boostHomeAmtValue {
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 1.3em;
+}
+
+.info {
+  font-size: 0.6em;
+  text-align: center;
+  color: var(--color-gray);
+}
+
+.boostPanel {
+  display: flex;
+  justify-content: center;
+  background: white;
+  margin: 20px;
+  width: 85%;
+  border-radius: 10px;
+}
+
+.newBoostPanel {
+  border: 1px solid var(--color-background-border);
+}
+
+.boostPanelContents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 66%;
+}
+
+.boostPanelCenter {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  font-size: 1.2em;
+  margin: 10px 0 40px 0;
+}
+
+.boostPanel .amountContainer {
+  margin: 30px 0;
+  padding: 0;
+}
+
+.boostPanel button {
+  margin: 40px 0 0px 0;
+}
+
+.boostPanelLeft {
+  grid-column: 1;
+  justify-self: start;
+  font-size: 0.8em;
+}
+
+.boostPanelRight {
+  grid-column: 2;
+  justify-self: end;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: right;
+}
+
+.rateSubheader {
+  font-size: 0.66em;
+  font-weight: normal;
+}
+
+.boostList {
+  display: flex;
+  flex-direction: column;
+}
+
+.boostListHeader {
+  margin-bottom: 1em;
+}
+
+.boostListTitle {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.boostItemHeaderCol {
+  justify-self: end;
+  padding-right: 10px;
+}
+
+.boostItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0.5em 0;
+  border: 1px solid var(--color-background-border);
+  border-radius: 10px;
+  margin-top:10px;
+}
+
+.boostItemData {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 75%;
+  align-items: center;
+  justify-items: start;
+}
+
+.boostItemLabel {
+  font-weight: normal;
+  text-align: left;
+}
+
+.boostItemData span {
+  justify-self: end;
+  text-align: right;
+  padding: 2px;
+  margin-left: 10px;
+}
+
+.boostItemButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  margin-top: 10px;
+}
+
+.boostItem button {
+  border: none;
+  font-size: 0.66em;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  padding: 10px 5px;
+  flex: 1 1 0px;
+  margin: 10px;
+}
+
+.boostItem button[disabled] {
+  cursor: default;
+  pointer-events: none;
+}
+
+@media (max-width: 650px) {
+  .boostForm {
+    font-size: 20px;
+  }
+}

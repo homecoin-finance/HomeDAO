@@ -1,0 +1,31 @@
+.valueTooHighMessage {
+  font-family: var(--font-family-fallback);
+  font-size: 18px;
+  color: var(--color-gray);
+  display: none;
+  width: 100%;
+}
+
+.valueTooHighMessage.visible {
+  display: block;
+}
+
+.amountContainer {
+  font-family: var(--font-family-fallback);
+  box-sizing: border-box;
+  padding: 5px 16px;
+  margin: 10px;
+  font-size: 30px;
+  color: black;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.amountContainer .button {
+  margin-top: 15px;
+  width: 100%;
+}

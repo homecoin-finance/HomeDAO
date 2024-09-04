@@ -1,0 +1,79 @@
+.eggStatusSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: -60px;
+}
+
+.eggStatusSectionTitle {
+  font-size: 36px;
+  color: var(--color-black);
+  letter-spacing: 0.02em;
+}
+
+.eggStatusSectionTitle.mobile {
+  display: none;
+}
+
+.eggStatusSectionBoxes {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-lrg);
+  width: var(--width-960);
+}
+
+.eggStatusSectionBoxes .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 26px;
+  width: calc(var(--width-960) / 4);
+  box-sizing: border-box;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid var(--color-background-border);
+  margin: 5px;
+}
+
+.eggStatusSectionBoxes .box .value {
+  font-size: var(--font-size-40);
+  color: var(--color-green);
+  text-transform: uppercase;
+}
+
+.eggStatusSectionBoxes .box .label {
+  margin-top: var(--spacing-sm);
+  line-height: 21px;
+  font-size: var(--font-size-18);
+  color: var(--color-black);
+}
+
+.eggsHeader {
+  margin-top: -3%;
+}
+
+@media (max-width: 960px) {
+  .eggStatusSectionTitle {
+    display: none;
+  }
+  .eggStatusSectionTitle.mobile {
+    display: block;
+  }
+  .eggStatusSectionBoxes {
+    flex-wrap: wrap;
+    align-items: center;
+    width: 320px;
+    margin: var(--spacing-sm);
+  }
+  .eggStatusSectionBoxes .box {
+    padding: 20px 0;
+    width: 158px;
+    height: 158px;
+    font-size: var(--font-size-13);
+    margin: 1px;
+  }
+  .eggStatusSectionBoxes .box .value {
+    font-size: var(--font-size-18);
+  }
+}

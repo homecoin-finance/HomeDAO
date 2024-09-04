@@ -1,0 +1,22 @@
+{
+  "usdcAddress": "0x9c14ba1e0C0581060ac96d51046bA6042d28Df37",
+  "poolAddress": "0xf7077bca32449D23f201C44CE13b01FcaE8cE284",
+  "seededAddress": "0xb147de117d304b2ae40d8737b415c630e5ec45dd",
+  "propTokenAddress": "0xD4fd63a7A68cc432A3fBBb04Ff2472457De7b02F",
+  "poolUtilsAddress": "0x6e44e014bEbFF8Bbb225F59D4F572295eE8A4f3C",
+  "poolStakingAddress": "0x252A823a46E579E92D06A35aeb1038d6Bb3ca030",
+  "baconCoinAirdropAddress": "0xda0bF912e7787072894729fc4bAb2C55C4186463",
+  "baconCoinAddress": "0x0Dc3AdBE709B1F637e0Dcc7CE0e3Ff0fb31369f1",
+  "Timelock": "0x66F70f3FaF0135D21eB420C2a3e318Dd0fDfc1a4",
+  "GovernorAlpha": "0x8778642c853dE63357c1c03d686d50009a366876",
+  "stakingAddress": "0xf916b2C02f324efd037C655fD929A8F08AB457bC",
+  "poolStakingRewardsAddress": "0x5c383FB297ee64949FB584E1dC6C66c8a9F2432B",
+  "homeBoostAddress": "0xF8540aC1d5Ee2f0F0BDC792BfdDfdDca63519476",
+  "outsidePoolAddress": "0xddEE1B76B95b469ce8C70235b4Aca33Bb0f4505E",
+  "lpStakable": {
+    "sushiBaconEth": "0x4F05e7d4599099E6C941572eE8e73f8B940D19d1",
+    "curveHome3crv": "0x06fd314b36abd255F9c8553000E4a99A4c26cd9A"
+  },
+  "rwaCoinAddress": "0x2371946E792FC48FCf321D81Ded6885A3E20EAb6",
+  "LSAirdropAddress": "0x76430Dd616631E68394E2c8D03C8f219957872B4"
+}

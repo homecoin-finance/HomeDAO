@@ -1,0 +1,21 @@
+.loadingStatus {
+  color: var(--color-gray);
+  z-index: 10;
+  font-size: 18px;
+  font-family: var(--font-family-fallback);
+  white-space: initial;
+}
+
+.loadingStatusCentered {
+  font-size: var(--font-size-13);
+  width: 70%;
+}
+
+.loadingStatusExternalLink {
+  color: var(--color-blue);
+}
+
+.loadingGif {
+  margin-top: -135px;
+  margin-bottom: -125px;
+}

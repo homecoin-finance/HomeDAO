@@ -1,0 +1,275 @@
+.form {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 36px;
+  min-height: 250px;
+  border: 1px solid var(--color-background-border);
+  border-radius: 10px;
+}
+
+.underlineOrange {
+  margin: 16px;
+  height: 10px;
+  width: 300px;
+  max-width: 62%;
+  background-color: var(--color-orange);
+}
+
+.availableBalance {
+  font-family: var(--font-family-fallback);
+  font-size: 18px;
+  color: #828282;
+  margin: 2%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -1%;
+}
+
+.availableBalance .limitValue {
+  margin-right: 10px;
+  color: var(--color-green);
+}
+
+.limit {
+  font-family: var(--font-family-fallback);
+  font-size: 18px;
+  color: var(--color-gray);
+  margin: 0.5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.limit .limitValue {
+  margin-top: 0.5%;
+  margin-left: 10px;
+  color: var(--color-green);
+  font-weight: bold;
+}
+
+.usdcLogo {
+  height: 70%;
+  margin: 3%;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  font-family: var(--font-family-fallback);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.amountInput {
+  padding-left: 5%;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 30px;
+  border: 0;
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background: var(--color-white);
+  border-style: solid;
+  border-color: var(--color-black);
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.amountInput:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: gray;
+}
+
+.gray {
+  color: gray;
+}
+
+.black {
+  color: black;
+}
+
+.currency {
+  margin: 3%;
+}
+
+.button {
+  font-family: var(--font-family-fallback);
+  font-weight: 500;
+  color: white;
+  background: var(--color-purple);
+  height: 60px;
+  margin: 10px;
+  width: 450px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  font-size: 24px;
+}
+
+.button[disabled] {
+  background-color: var(--color-disabled);
+  cursor: default;
+  pointer-events: none;
+}
+
+.buttonApproval {
+  color: white;
+  background: black;
+  height: 60px;
+  margin: 10px;
+  width: 450px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.promptButton {
+  margin-bottom: 50px;
+  width: 50%;
+  margin-top: 35%;
+  margin-bottom: 1%;
+}
+
+.halfButton {
+  color: white;
+  background: #1652f0;
+  height: 60px;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 40%;
+}
+
+.buttonText {
+  margin: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonsRow {
+  display: flex;
+  font-size: 12px;
+  width: 100%;
+  justify-content: center;
+}
+
+.approvalExplaination {
+  font-family: var(--font-family-fallback);
+  color: var(--color-gray);
+  font-size: var(--font-size-13);
+  max-width: 55%;
+  text-align: left;
+  margin: 3%;
+}
+
+.claimExplanation {
+  font-family: var(--font-family-fallback);
+  color: var(--color-gray);
+  font-size: var(--font-size-15);
+  max-width: 55%;
+  text-align: left;
+  margin: 3%;
+}
+
+.claim {
+  margin-top: 30px;
+}
+
+.loadingBar {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.limit-green {
+  color: var(--color-green);
+  font-weight: 700;
+}
+
+.form img {
+  /* height: 85px; */
+  padding-top: 5%;
+}
+
+.divider {
+  width: 65%;
+  height: 10px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 2%;
+}
+
+.logo-form {
+  height: 80px;
+}
+
+.topBalance {
+  color: #00b421;
+  font-size: 35px;
+}
+
+.balanceRow {
+  color: black;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-size: 30px;
+  width: 70%;
+  margin: 10px;
+}
+
+.balanceAmount {
+  color: black;
+}
+
+.noteText {
+  font-size: 0.5em;
+  font-weight: normal;
+  margin-top: 10px;
+  max-width: 75%;
+}
+
+@media (max-width: 675px) {
+  .amountContainer {
+    font-size: 20px;
+    width: 80%;
+  }
+  .amountInput {
+    font-size: 30px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 650px) {
+  .button {
+    width: 250px;
+  }
+  .balanceWrapperClaim {
+    font-size: 18px;
+  }
+  .limit {
+    flex-direction: column;
+    width: 50%;
+  }
+  .availableBalance {
+    flex-direction: column;
+  }
+  .amountContainer {
+    min-width: 150px;
+  }
+  .amountInput {
+    min-width: 150px;
+  }
+}

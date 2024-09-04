@@ -1,0 +1,50 @@
+.devTools {
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.propTokensContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+}
+
+.propTokenForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.propTokenForm input {
+  width: 200px;
+}
+
+.devToolsButton {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  background: #1652f0;
+  max-width: 300px;
+}
+
+.rowPhoto {
+  width: 200px;
+}
+
+.stakingColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+}

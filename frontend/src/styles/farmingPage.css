@@ -1,0 +1,379 @@
+.farmingInterfaceContainer {
+    display: flex;
+    font-family: 'Roboto';
+  }
+  
+  .farmingInterfaceContainer button {
+    border-width: 0px;
+  }
+  
+  .farmingPoolsSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3px;
+    margin-right: -10px;
+    width: 360px;
+    color: var(--color-white);
+    background-color: var(--color-purple);
+    border-radius: 10px;
+  }
+  
+  .farmingPoolsTitle {
+    padding: 18px 0;
+    font-size: 36px;
+  }
+  
+  .farmingPoolList {
+    background-color: var(--color-white);
+    color: var(--color-purple);
+    flex-grow: 1;
+    border-left: 3px solid var(--color-white);
+    border-radius: 0px 0px 0px 10px;
+  }
+  
+  .poolListItem {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .poolListItemActive {
+    color: var(--color-gray-dark);
+    background-color: rgba(77, 0, 239, 0.25);
+  }
+  
+  .apy {
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .apyLabel {
+    font-size: 8px;
+    font-weight: normal;
+  }
+  
+  .poolIcon {
+    height: 30px;
+    margin: 5px;
+  }
+  
+  .poolListItem .poolName {
+    margin-left: 15px;
+  }
+  
+  .farmingContainer {
+    padding: 1%;
+    box-shadow: -4px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: var(--color-purple);
+  }
+  
+  .interfaceContainerInnerBorder {
+    border-radius: 10px;
+  }
+  
+  .farmingForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 325px;
+    min-width: 400px;
+    max-width: 450px;
+  }
+
+  .farmingFormContainer{
+    width: 80%;
+  }
+  
+  .farmingForm .poolName {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .poolAccrualInfo {
+    border: #c4c4c4 solid 1px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  
+  .poolTitle {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .userDataSection {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px;
+  }
+  
+  .dataLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: var(--color-gray-dark);
+    border-bottom: #d8d8d8 1px solid;
+    margin: 3px;
+  }
+  
+  .dataLineBottom {
+    border-bottom: #d8d8d8 0px solid;
+  }
+  
+  .dataLineAmount {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .poolInteractionTitle {
+    color: var(--color-purple);
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  
+  .approveForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .approveTabs {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 20px;
+    width: 55%;
+  }
+  
+  .approveTab {
+    display: flex;
+    color: var(--color-purple);
+    align-items: center;
+  }
+  
+  .depositTab {
+    display: flex;
+    color: #c0c0c0;
+    align-items: center;
+  }
+  
+  .approveButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .circle {
+    border-radius: 14px;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3px;
+  }
+  
+  .approveCircle {
+    border: var(--color-purple) 1px solid;
+  }
+  
+  .depositCircle {
+    border: #c0c0c0 1px solid;
+  }
+  
+  /* .approveButton { */
+  .farmingForm .button {
+    margin-bottom: 30px;
+    margin-top: 10px;
+    padding: 15px 30px 15px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--color-black);
+    border-radius: 5px;
+    cursor: pointer;
+    height: auto;
+    width: auto;
+  }
+
+  .farmingTransactionPanel {
+    width: 80%;
+    border: none;
+    margin: 10px;
+  }
+
+  .farmingForm .button[disabled] {
+    background-color: var(--color-disabled);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .farmingFormBottom .amountContainer .valueTooHighMessage {
+    font-size: 14px;
+    width: auto;
+  }
+  
+  .disabledButton {
+    margin-bottom: 30px;
+    padding: 15px 30px 15px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background-color: #CCCCCC;
+    border-radius: 5px;
+  }
+  
+  .explainationText {
+    margin-bottom: 30px;
+    margin-top: 15px;
+    width: 90%;
+    font-size: 12px;
+    color: #828282;
+    white-space: normal;
+  }
+  
+  .approveStatusContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+    font-size: 13px;
+  }
+  
+  .farmingLoadingBar {
+    width: 300px;
+    height: 200px;
+    margin-top: -90px;
+    margin-bottom: -90px;
+    margin-left: -45px;
+    margin-right: -45px;
+  }
+  
+  .approvePendingText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .farmingTabsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    font-size: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color:#ebebeb;
+    border-radius: 40px;
+  }
+  
+  .farmingTabActive {
+    background-color: var(--color-purple);
+    color: white;
+    padding: 6px;
+    border-radius: 40px;
+    z-index: 1;
+    cursor: pointer;
+    border-width: 0px;
+  }
+  
+  .farmingTabInactive {
+    background-color: transparent;
+    color: #c0c0c0;
+    color: var(--color-purple);
+    padding: 6px;
+    border-radius: 40px;
+    cursor: pointer;
+    border-width: 0px;
+  }
+  
+  .farmingFormBottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formText {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .formTextPurple {
+    display: flex;
+    color: var(--color-purple);
+  }
+  
+  .farmingInput {
+    border: var(--color-purple) 1px solid;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 20px;
+    margin: 5px;
+  }
+  
+  .errorMessage {
+    color: red;
+    font-size: 10px;
+    margin: 8px;
+  }
+  
+  .rwaAmountText {
+    color: var(--color-purple);
+    font-weight: bold;
+    border-bottom: #d8d8d8 1px solid;
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+  
+  @media screen and (max-width: 560px) {
+    .farmingInterfaceContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .farmingPoolsSection {
+      margin: 0;
+    }
+  
+    .farmingPoolList {
+      border: 0;
+      border-radius: 0;
+    }
+  
+    .poolListItem {
+      font-size: 12px;
+      height: 48px;
+    }
+  
+    .poolListItem .poolIcon {
+      margin-left: 87px;
+      height: 26px;
+    }
+  
+    .poolListItem .poolName {
+      margin-left: 0;
+    }
+  }
+  

@@ -1,0 +1,137 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  min-height: 450px;
+  background-color: var(--color-white);
+  border: 10px solid var(--color-green);
+  outline: none;
+}
+
+.warnModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  min-height: 450px;
+  background-color: var(--color-white);
+  border: 10px solid #ffa500;
+  outline: none;
+}
+
+.modal * {
+  font-family: 'Roboto';
+}
+
+.warnModal * {
+  font-family: 'Roboto';
+}
+
+.modalHeader {
+  margin: 25px auto;
+  color: var(--color-blue);
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-18);
+}
+
+.warnModalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  text-align: center;
+  font-size: var(--font-size-18);
+  max-width: 50%;
+}
+
+.modalContent .line {
+  margin: 10px 0;
+  color: var(--color-blue);
+}
+
+.modalContent .value {
+  margin: 10px 0;
+}
+
+.modalContent .value.first {
+  color: var(--color-teal);
+}
+
+.modalContent .value.second {
+  color: var(--color-green);
+}
+
+.warnModalButtons {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5%;
+}
+
+.modalConfirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto;
+  width: 242px;
+  height: 72px;
+  font-size: 24px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-black);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.modalContinue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  color: var(--color-purple);
+  background-color: var(--color-white);
+  border: 3px solid var(--color-purple);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modalCancel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px auto;
+  margin-left: 30%;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  color: var(--color-white);
+  background-color: var(--color-purple);
+  border-radius: 6px;
+  border: 0;
+  cursor: pointer;
+}

@@ -1,0 +1,1 @@
+export { MetamaskPrompt } from './metamaskPrompt';

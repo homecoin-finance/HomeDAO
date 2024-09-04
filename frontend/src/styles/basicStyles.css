@@ -1,0 +1,15 @@
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.windowHeight {
+  height: 100vh;
+}
+
+.ReactModalPortal {
+  z-index: 1000;
+  position: relative;
+}

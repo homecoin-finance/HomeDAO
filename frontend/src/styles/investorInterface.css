@@ -1,0 +1,120 @@
+.investorInterface {
+  height: 100%;
+  padding-top: var(--spacing-med);
+  overflow: hidden;
+  padding-bottom: 5%;
+}
+
+.investorInterfaceContainer {
+  border-radius: 5px;
+  width: 650px;
+  max-width: 80%;
+  min-height: 300px;
+}
+
+.investorInterfaceBody {
+  margin-top: 0%;
+}
+
+.investorButtonContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  font-size: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background-color:white;
+  border: 1px solid var(--color-background-border);
+  border-radius: 40px;
+}
+
+.tabContainer {
+  display: flex;
+  width: 100%;
+  font-size: 36px;
+}
+
+.tabLeftActive {
+  padding: 5%;
+  flex-grow: 1;
+  background-color: var(--color-green);
+  color: white;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  box-shadow: 4px -1px 1px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.tabRightActive {
+  padding: 5%;
+  flex-grow: 1;
+  background-color: #ffa702;
+  color: white;
+  cursor: pointer;
+  box-shadow: -4px -1px 1px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.tabLeftInactive {
+  margin-top: 5px;
+  padding: 5%;
+  flex-grow: 1;
+  background: #c6c7c7;
+  color: white;
+  cursor: pointer;
+}
+
+.tabRightInactive {
+  margin-top: 5px;
+  padding: 5%;
+  flex-grow: 1;
+  background: #c6c7c7;
+  color: white;
+  cursor: pointer;
+}
+
+.interfaceContainerOuterBorder {
+  padding: 1%;
+  border-bottom-left-radius: 1%;
+  border-bottom-right-radius: 1%;
+}
+
+.interfaceContainerInnerBorder {
+  background-color: white;
+}
+
+.formContainer {
+  display: inline-block;
+  width: var(--width-650);
+  max-width: 80%;
+}
+
+.navButton {
+  background-color: transparent;
+  color: #c0c0c0;
+  color: var(--color-purple);
+  padding: 6px;
+  border-radius: 40px;
+  cursor: pointer;
+  border-width: 0px;
+  font-size: 18px;
+}
+
+.selectedNavButton {
+  background-color: var(--color-purple);
+  color: white;
+  padding: 6px;
+  border-radius: 40px;
+  z-index: 1;
+  cursor: pointer;
+  border-width: 0px;
+}
+
+@media (max-width: 650px) {
+  .tabContainer {
+    font-size: 20px;
+  }
+  .investorInterfaceContainer {
+    max-width: 100%;
+  }
+}

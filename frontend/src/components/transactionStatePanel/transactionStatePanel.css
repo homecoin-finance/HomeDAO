@@ -1,0 +1,53 @@
+.form {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 36px;
+  min-height: 250px;
+  background-color: white;
+}
+
+.infoText {
+  font-family: var(--font-family-fallback);
+  font-size: 18px;
+  color: var(--color-gray);
+  margin: 0.5%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.infoText .infoTextValue {
+  margin-top: 0.5%;
+  margin-left: 10px;
+  color: var(--color-green);
+  font-weight: bold;
+}
+
+.transactionMessageTitle {
+  font-family: 'Roboto';
+  font-size: 36px;
+}
+
+.transactionMessageContent {
+  font-family: var(--font-family-fallback);
+  font-size: 18px;
+  color: var(--color-gray);
+  margin: 10px;
+}
+
+.pendingStatusContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (max-width: 650px) {
+  .actionButton {
+    width: 250px;
+  }
+}

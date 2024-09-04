@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+  ganache:
+    image: trufflesuite/ganache:v7.2.0
+    command: --hostname ganache --db db --networkId 123454321 -q -m "[test mnemonic]"
+    ports:
+      - "8545:8545"
+    volumes:
+      - ./ganache_db:/app/db
+
+  truffle:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: ./truffle.Dockerfile
+    command: bash
+    environment:
+      GANACHE_HOSTNAME: ${GANACHE_HOSTNAME:-ganache}
+      GANACHE_PORT: ${GANACHE_PORT:-8545}
+      LOCAL_ONLY: ${LOCAL_ONLY:-true}
+    volumes:
+      - .:/src
+    depends_on:
+      - ganache

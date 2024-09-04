@@ -1,0 +1,55 @@
+.statusSection {
+  display: inline-block;
+  width: var(--width-650);
+  max-width: 80%;
+}
+
+.statusSectionLine {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  min-height: 65px;
+  color: var(--color-black);
+  font-size: 30px;
+  border: 1px solid var(--color-background-border);
+  border-radius: 10px;
+  margin: 2%;
+  justify-content: center;
+  background: white;
+}
+
+.statusSectionMain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.statusSectionLine .value {
+  font-family: var(--font-family-fallback);
+  font-weight: 700;
+  color: var(--color-green);
+  margin-left: 20px;
+}
+
+.statusSectionInfo {
+  font-size: 0.55em;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  margin: 5px 0 10px 0;
+  color: var(--color-orange);
+  font-family: var(--font-family-fallback);
+}
+
+.statusSectionInfo a {
+  color: var(--color-white);
+}
+
+@media (max-width: 650px) {
+  .statusSectionLine {
+    font-size: 18px;
+  }
+}
